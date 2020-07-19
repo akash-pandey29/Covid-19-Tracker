@@ -1,0 +1,73 @@
+.bg-gradient-danger{
+    background: linear-gradient(87deg,#f5365c 0,#f56036 100%)!important;
+}
+
+.mt--7, .my--7 {
+    margin-top: -4rem!important;
+}
+
+[class*=shadow] {
+    transition: all .15s ease;
+}
+
+.bg-gradient-default {
+    background: linear-gradient(87deg,#172b4d 0,#1a174d 100%)!important;
+}
+
+.card-profile-image img, .shadow {
+    box-shadow: 0 0 2rem 0 rgba(136,152,170,.15)!important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: .375rem;
+    background-color: #fff;
+    background-clip: border-box;
+}
+
+.card-header:first-child {
+    border-radius: calc(.375rem - 1px) calc(.375rem - 1px) 0 0;
+}
+
+.bg-transparent {
+    background-color: transparent!important;
+}
+
+.card-header {
+    margin-bottom: 0;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    background-color: #fff;
+}
+
+.nav {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.justify-content-end {
+    justify-content: flex-end!important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #5e72e4;
+}
+
+.nav-pills .nav-link {
+    font-size: .875rem;
+    font-weight: 500;
+    padding: .75rem 1rem;
+    transition: all .15s ease;
+    color: #5e72e4;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}

@@ -1,0 +1,23 @@
+.auto-min-width{
+    min-width: auto !important;
+}
+
+.grad {
+    background-image: linear-gradient(to bottom, #343a40, #ffc107);
+  }
+  .icon-shape {
+    display: inline-flex;
+    padding: 12px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.x-large-font-size{
+    font-size: x-large !important;
+}

@@ -1,0 +1,32 @@
+<div class="jumbotron text-center header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <h1 class="display-4 text-white">Covid-19 Tracker(Country-Wise)</h1>
+    <hr>
+    <div class="mx-auto">
+        <div class="form-group col-lg-5 mx-auto">
+            <label for="c" class="text-white">Select Country</label>
+            <select name="" class="form-control" id="c" #input (change)="updateValues(input.value)">
+                <option value="{{country}}" *ngFor="let country of countries">{{country}}</option>
+            </select>
+        </div>
+    </div>
+    <app-dashboard-card [totalConfirmed]='totalConfirmed' [totalDeaths]='totalDeaths' [totalActive]='totalActive' [totalRecovered]='totalRecovered'></app-dashboard-card>
+
+    <!-- <div class="card">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Date</th>
+                    <th>Cases</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cs of selectedCountryData, index as i">
+                    <td>{{i + 1}}</td>
+                    <td>{{cs.date | date}}</td>
+                    <td>{{cs.cases}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>-->
+</div>
