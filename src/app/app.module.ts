@@ -10,6 +10,9 @@ import { Route, Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardCardComponent } from './components/dashboard-card/dashboard-card.component'
 import { GoogleChartsModule } from 'angular-google-charts';
+import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
   {path : '', component : HomeComponent},
@@ -22,7 +25,8 @@ const routes: Routes = [
     NavbarComponent,
     HomeComponent,
     CountriesComponent,
-    DashboardCardComponent
+    DashboardCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +34,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpClientModule,
     GoogleChartsModule,
+    FormsModule,
+    Ng2SearchPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

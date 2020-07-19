@@ -11,6 +11,10 @@ export class DashboardCardComponent implements OnInit {
   @Input("totalActive") totalActive
   @Input("totalDeaths") totalDeaths
   @Input("totalRecovered") totalRecovered
+  @Input("totalConfirmedPrev") totalConfirmedPrev
+  @Input("totalActivePrev") totalActivePrev
+  @Input("totalDeathsPrev") totalDeathsPrev
+  @Input("totalRecoveredPrev") totalRecoveredPrev
   
   constructor() { }
 
